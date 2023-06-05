@@ -1,6 +1,20 @@
+<%= form_with model: @user, url: user_session_path do |f| %>
+<%= form_with model: @user, url: user_registration_path do |f| %>
+
 <h1>welcome to Bookers !!</h1>
 <p>In Bookers,<br>
 
 you can share and exchange your opinions , inpressions , and emotions<br>
 
 about various books!<br></p>
+
+<div class="actions">
+    <%= f.submit "Log in" %>
+</div>
+
+<div class="actions">
+    <%= f.submit "Sign up" %>
+</div>
+
+<% end %>
+<% end %>
