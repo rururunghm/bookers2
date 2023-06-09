@@ -6,7 +6,7 @@ class User < ApplicationRecord
          
   has_one_attached :image
          
-  has_many :post_images, dependent: :destroy
+  has_many :books, dependent: :destroy
    
   def get_profile_image
     unless profile_image.attached?
