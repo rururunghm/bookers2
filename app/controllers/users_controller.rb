@@ -8,6 +8,9 @@ class UsersController < ApplicationController
     @user = User.all
   end
   
+  def show
+  end
+  
   
   def create
    
@@ -22,4 +25,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:title, :body)
   end
+
 end
