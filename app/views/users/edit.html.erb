@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
+      <h2>User info</h2>
+        <form enctype="multipart/form-date" action="/users/id" accept charset="UTF-8" method="post">
+          <input type = "hidden" name ="_method" value="patch" autocompalte="off">
+          
+          <div class="form-group">
+            <label for = "user_name">Name</label>
+            <inout class="form-control name" type="text" name = "user[name]" id="user_name">
+          </div>
+          
+          <div class="form-group">
+            <label for ="user_image">Image</label>
+            <input class="form-control-file user image" accept="image/*" type="file" name="user[profile_image]" id ="user_profile_image">
+          </div>
+          
+          <div class="form-group">
+            <label for ="user_introduction">Introduction</label>
+            <textarea class="form-control introdction" name="user[introdction]" id="user_introdction">
+            </textarea>
+          </div>
+          
+          <div class="form-group">
+            <input type="submit" name="commit" value="Update User" class="btn btn-secondary" date-disable-with="Update User">
+          </div>
+          
+          
+        </form>
+    </div>
+  </div>
+</div>
