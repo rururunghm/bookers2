@@ -60,8 +60,14 @@
               <% end %>
             </td>
             <td></td>
-            <td></td>
-            <td></td>
+            <td>  <% if @book.user == current_user %>
+                  <%= link_to "Edit", edit_book_path(@book.id) %>
+                  <% end %></td>
+                  
+            <td>  <% if @book.user == current_user %>
+                  <%= link_to "Destroy", book_path(@book), method: :delete %>
+                  <% end %>
+            </td>
            </tr>
            </tbody>
          </table>
