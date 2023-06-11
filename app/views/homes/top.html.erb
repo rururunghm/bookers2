@@ -1,20 +1,32 @@
-<%= form_with model: @user, url: user_session_path do |f| %>
-<%= form_with model: @user, url: user_registration_path do |f| %>
+<div class="container">
+        <div class="row">
+            <div class="mx-auto col-11 col-sm-10 col-lg-8 col-xl-6">
+        
 
-<h1>welcome to Bookers !!</h1>
-<p>In Bookers,<br>
+    <h1>welcome to
+        <i class ="fas fa-book" aria-hidden="true">
+        </i>
+        <strong>Bookers</strong>!!
+        </h1>
+        
+<p>In<i class ="fas fa-book" aria-hidden="true"></i> 
+<strong>Bookers</strong>,</p>
 
-you can share and exchange your opinions , inpressions , and emotions<br>
+<p>you can share and exchange your opinions , inpressions , and emotions</p>
 
-about various books!<br></p>
+<p>about various books!</p>
 
-<div class="actions">
-    <%= f.submit "Log in" %>
+    <div class="btn-wrapper col-10 mx-auto">
+    <div class="row">
+        <a class="btn btn-info btn-sm btn-block mb-3 sign_in" href="/users/sign_in">Log in</a>
+    </div>
+    
+    
+    <div class="row">
+        <a class="btn btn-success btn-sm btn-block md-3 sign_up" href="/users/sign_up">Sign up</a>
+    </div>
+    </div>
+    
+            </div>
+        </div>
 </div>
-
-<div class="actions">
-    <%= f.submit "Sign up" %>
-</div>
-
-<% end %>
-<% end %>
